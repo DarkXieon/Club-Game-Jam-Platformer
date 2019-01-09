@@ -1,15 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
+
 using UnityEngine;
 
 public class StickToWalls : MonoBehaviour
 {
+    public KeyCode StickButton = KeyCode.E;
     public LayerMask Mask;
     public float Offset;
     public float Radius;
 
     private Rigidbody2D body;
+    private Action<Rigidbody2D> unstick;
     private bool stopped;
 
     private void Start()
@@ -19,46 +21,59 @@ public class StickToWalls : MonoBehaviour
 
     private void Update()
     {
-        Collider2D[] hitsRight = new Collider2D[5];
-        int countRight = Physics2D.OverlapCircle(new Vector2(transform.position.x + Offset, transform.position.y), Radius, new ContactFilter2D() { useLayerMask = true, layerMask = Mask }, hitsRight);
+        Collider2D[] hitsRight = new Collider2D[10];
+        int countRight = Physics2D.OverlapCircle(new Vector2(transform.position.x + Offset * transform.localScale.x, transform.position.y), Radius * transform.localScale.x, new ContactFilter2D() { useLayerMask = true, layerMask = Mask }, hitsRight);
 
-        Collider2D[] hitsLeft = new Collider2D[5];
-        int countLeft = Physics2D.OverlapCircle(new Vector2(transform.position.x - Offset, transform.position.y), Radius, new ContactFilter2D() { useLayerMask = true, layerMask = Mask }, hitsLeft);
+        hitsRight = hitsRight
+            .Where(collider => collider != null && collider.gameObject != gameObject && collider.gameObject.GetComponent<StickyWall>() != null)
+            .Distinct()
+            .ToArray();
+        countRight = hitsRight.Length;
 
-        if (countRight > 0 || countLeft > 0)
+        Collider2D[] hitsLeft = new Collider2D[10];
+        int countLeft = Physics2D.OverlapCircle(new Vector2(transform.position.x - Offset * transform.localScale.x, transform.position.y), Radius * transform.localScale.x, new ContactFilter2D() { useLayerMask = true, layerMask = Mask }, hitsLeft);
+
+        hitsLeft = hitsLeft
+            .Where(collider => collider != null && collider.gameObject != gameObject && collider.gameObject.GetComponent<StickyWall>() != null)
+            .Distinct()
+            .ToArray();
+        countLeft = hitsLeft.Length;
+
+        if (unstick != null && Input.GetKeyDown(StickButton))
         {
-            if (!stopped)
+            unstick.Invoke(body);
+        }
+        else if ((countRight > 0 || countLeft > 0) && unstick == null && (Input.GetKey(StickButton) || Input.GetKeyDown(StickButton)))
+        {
+            Collider2D hitCollider = hitsLeft.Concat(hitsRight).First();
+
+            unstick = hitCollider.GetComponent<StickyWall>().StickPlayer(body, hitCollider);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(unstick != null && GetComponent<Die>().IsDead)
+        {
+            StickyWall stickyWall = transform.parent.GetComponent<StickyWall>();
+
+            if(stickyWall.StickOnDeath && !stickyWall.IgnorePhysicsOnDeath)
             {
-                body.velocity = Vector2.zero;
-                body.gravityScale = 0;
-                stopped = true;
+                unstick.Invoke(body);
+
+                unstick = null;
             }
         }
-        else
-        {
-            stopped = false;
-            body.gravityScale = 1;
-        }
-
-        //if (hitRight != default(RaycastHit2D) || hitLeft != default(RaycastHit2D))
-        //{
-        //    if(!stopped)
-        //    {
-        //        body.velocity = Vector2.zero;
-        //        body.gravityScale = 0;
-        //        stopped = true;
-        //    }
-        //}
-        //else
-        //{
-        //    stopped = false;
-        //    body.gravityScale = 1;
-        //}
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(new Vector3(transform.position.x + Offset, transform.position.y, 0), Radius);
-        Gizmos.DrawSphere(new Vector3(transform.position.x - Offset, transform.position.y, 0), Radius);
+        Gizmos.DrawSphere(new Vector3(transform.position.x + Offset * transform.localScale.x, transform.position.y, 0), Radius * transform.localScale.x);
+        Gizmos.DrawSphere(new Vector3(transform.position.x - Offset * transform.localScale.x, transform.position.y, 0), Radius * transform.localScale.x);
+    }
+
+    public void UnStick()
+    {
+        unstick = null;
     }
 }

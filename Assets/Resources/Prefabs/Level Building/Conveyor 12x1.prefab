@@ -1,0 +1,549 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!4 &2756889204875328835 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 4906798463814795824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8422140461057941900 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6277811988601666625, guid: 2d4d3e1d4ced1154baa3053fff7e049f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2593563892563566029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1681853760705061393 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 8434439463732780386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1552517143152872936 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 8633863419406725787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1743213355007042058 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 8821179874263145849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &415780673478525447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 7466727686602751348}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &616783459685705823 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 7698132107277227820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4696816983791545249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3459794761409200422}
+  m_Layer: 0
+  m_Name: Conveyor 12x1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3459794761409200422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696816983791545249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8422140461057941900}
+  - {fileID: 1681853760705061393}
+  - {fileID: 8080453377800323278}
+  - {fileID: 1743213355007042058}
+  - {fileID: 1552517143152872936}
+  - {fileID: 7032095020860616686}
+  - {fileID: 616783459685705823}
+  - {fileID: 2756889204875328835}
+  - {fileID: 6156074014027173464}
+  - {fileID: 415780673478525447}
+  - {fileID: 8283611128322354788}
+  - {fileID: 6715544518692837168}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &8283611128322354788 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 1202267012421554455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8080453377800323278 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 1331247569200365501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6715544518692837168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1988139564563569795, guid: 48468f2f8eff26b40b9759d13dc964c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5090512675364146099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7032095020860616686 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 273882013023228061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6156074014027173464 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 3978023893107781931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &273882013023228061
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!1001 &1202267012421554455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!1001 &1331247569200365501
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!1001 &2593563892563566029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6277811988601666625, guid: 2d4d3e1d4ced1154baa3053fff7e049f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -27.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277811988601666625, guid: 2d4d3e1d4ced1154baa3053fff7e049f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d4d3e1d4ced1154baa3053fff7e049f, type: 3}
+--- !u!1001 &3978023893107781931
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!1001 &4906798463814795824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!1001 &5090512675364146099
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 1988139564563569795, guid: 48468f2f8eff26b40b9759d13dc964c0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988139564563569795, guid: 48468f2f8eff26b40b9759d13dc964c0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988139564563569795, guid: 48468f2f8eff26b40b9759d13dc964c0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 48468f2f8eff26b40b9759d13dc964c0, type: 3}
+--- !u!1001 &7466727686602751348
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!1001 &7698132107277227820
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!1001 &8434439463732780386
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!1001 &8633863419406725787
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!1001 &8821179874263145849
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3459794761409200422}
+    m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}

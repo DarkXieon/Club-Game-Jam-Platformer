@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
+
 using UnityEngine;
 
 public class Jump : MonoBehaviour
@@ -23,14 +22,17 @@ public class Jump : MonoBehaviour
 
     private void Update()
     {
-        Collider2D[] hits = new Collider2D[5];
-        int count = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y + Offset), Radius, new ContactFilter2D() { useLayerMask = true, layerMask = Mask }, hits);
-        
-        if (hits.Where(collider => collider != null).Any(collider => collider.tag != "Player"))
-        {
-            inAir = false;
-        }
+        Collider2D[] hits = new Collider2D[10];
+        int count = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y + Offset * transform.localScale.y), Radius * transform.localScale.y, new ContactFilter2D() { useLayerMask = true, layerMask = Mask }, hits);
 
+        hits = hits
+            .Where(collider => collider != null && collider.gameObject != gameObject)
+            .Distinct()
+            .ToArray();
+        count = hits.Length;
+
+        inAir = count == 0;
+        
         if (!inAir && Input.GetAxis("Vertical") > 0f)
         {
             float jumpVelocity = Mathf.Sqrt(-2 * JumpHeightMinMax.x * Physics2D.gravity.y);
@@ -72,6 +74,6 @@ public class Jump : MonoBehaviour
     
     private void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y + Offset, 0), Radius);
+        Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y + Offset * transform.localScale.y, 0), Radius * transform.localScale.y);
     }
 }
