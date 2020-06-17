@@ -9,28 +9,4 @@ public class LevelAdvancer : Activatable
     {
         SceneManager.LoadScene(NextScene);
     }
-
-    //public string[] GameScenes; 
-
-    //private static int currentScene;
-    //private static LevelAdvancer singleton;
-
-    //private void Start()
-    //{
-    //    DontDestroyOnLoad(gameObject);
-
-    //    currentScene = 0;
-
-    //    singleton = this;
-    //}
-
-    //public static void AdvanceScene()
-    //{
-    //    currentScene++;
-
-    //    if(currentScene < singleton.GameScenes.Length)
-    //    {
-    //        SceneManager.LoadScene(singleton.GameScenes[currentScene]);
-    //    }
-    //}
 }

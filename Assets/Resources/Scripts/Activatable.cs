@@ -3,7 +3,7 @@
 public abstract class Activatable : MonoBehaviour
 {
     public bool Activated { get; set; }
-
+    
     public bool CanActivateMultipleTimes;
     public bool DestroyAfterUse;
     public bool CanActivateWhileDead;

@@ -5,7 +5,11 @@ using UnityEngine;
 
 public class StickToWalls : MonoBehaviour
 {
-    public KeyCode StickButton = KeyCode.E;
+    private const string grabInputButton = "Grab";
+    private const string grabLeftInputAxis = "GrabLeft";
+    private const string grabRightInputAxis = "GrabRight";
+
+    //public KeyCode StickButton = KeyCode.E;
     public LayerMask Mask;
     public float Offset;
     public float Radius;
@@ -39,15 +43,22 @@ public class StickToWalls : MonoBehaviour
             .ToArray();
         countLeft = hitsLeft.Length;
 
-        if (unstick != null && Input.GetKeyDown(StickButton))
+        if(!stopped && unstick != null)
+        {
+            stopped = !GrabBeingPressed();
+        }
+
+        if (unstick != null && GrabBeingPressed() && stopped)
         {
             unstick.Invoke(body);
         }
-        else if ((countRight > 0 || countLeft > 0) && unstick == null && (Input.GetKey(StickButton) || Input.GetKeyDown(StickButton)))
+        else if ((countRight > 0 || countLeft > 0) && unstick == null && GrabBeingPressed())
         {
             Collider2D hitCollider = hitsLeft.Concat(hitsRight).First();
 
             unstick = hitCollider.GetComponent<StickyWall>().StickPlayer(body, hitCollider);
+
+            stopped = false;
         }
     }
 
@@ -75,5 +86,13 @@ public class StickToWalls : MonoBehaviour
     public void UnStick()
     {
         unstick = null;
+    }
+
+    private bool GrabBeingPressed()
+    {
+        return Input.GetButtonDown(grabInputButton)
+            || Input.GetButton(grabInputButton)
+            || Input.GetAxis(grabLeftInputAxis) > 0
+            || Input.GetAxis(grabRightInputAxis) > 0;
     }
 }

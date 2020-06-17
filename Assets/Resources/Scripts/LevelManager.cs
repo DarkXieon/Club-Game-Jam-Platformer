@@ -13,9 +13,10 @@ public class LevelManager : MonoBehaviour
     [System.Serializable]
     public class Stage
     {
+        public ConveyerLever Lever;
         public PressurePad[] ToStart;
         public UnityEvent OnStart;
-        public bool CanStart { get { return ToStart.All(pad => pad.IsOn); } }
+        public bool CanStart { get { return (Lever == null || Lever.Activated) && ToStart.All(pad => pad.IsOn); } }
     }
 
     private void Update()

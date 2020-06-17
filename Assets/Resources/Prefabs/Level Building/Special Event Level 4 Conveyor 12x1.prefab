@@ -1,77 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!4 &5444808024966830316 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6277811988601666625, guid: 2d4d3e1d4ced1154baa3053fff7e049f,
-    type: 3}
-  m_PrefabInstance: {fileID: 2058317322540704941}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2898498712448752497 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 5360279904304866306}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5714264895159105966 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 3249108198323357405}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2837143941394783082 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 4973535804397855769}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &3090887923801879688 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 5241918542905838587}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6843686945737217678 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 4369523049629477373}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4026760558055428415 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 6177793478737292876}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1814066700298372131 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 8896543416268667728}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7638219997622302520 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 601911744870287435}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4227624943228861287 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 6409054825452028948}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5592309943676294916 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
-    type: 3}
-  m_PrefabInstance: {fileID: 3441281553678411895}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &7087755442509033040 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1988139564563569795, guid: 48468f2f8eff26b40b9759d13dc964c0,
-    type: 3}
-  m_PrefabInstance: {fileID: 8776264857937883859}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8985451058716942870
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +110,7 @@ MonoBehaviour:
   CanActivateWhileDead: 0
   RequiresUserInput: 0
   CanToggle: 0
-  Speed: 12
+  Speed: 15
   Direction: -1
 --- !u!1 &9097515356292846273
 GameObject:
@@ -223,6 +151,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451058716942869}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -278,13 +211,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Right Middle (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &7638219997622302520 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 601911744870287435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2058317322540704941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -292,6 +226,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451060663934515}
     m_Modifications:
+    - target: {fileID: 3533110199044985752, guid: 2d4d3e1d4ced1154baa3053fff7e049f,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left
+      objectReference: {fileID: 0}
     - target: {fileID: 6277811988601666625, guid: 2d4d3e1d4ced1154baa3053fff7e049f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -347,13 +286,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3533110199044985752, guid: 2d4d3e1d4ced1154baa3053fff7e049f,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Left
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d4d3e1d4ced1154baa3053fff7e049f, type: 3}
+--- !u!4 &5444808024966830316 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6277811988601666625, guid: 2d4d3e1d4ced1154baa3053fff7e049f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2058317322540704941}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3249108198323357405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -361,6 +301,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451060663934515}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -416,13 +361,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Left Middle (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &5714264895159105966 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 3249108198323357405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3441281553678411895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -430,6 +376,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451058716942869}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -485,13 +436,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Right Middle
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &5592309943676294916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 3441281553678411895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4369523049629477373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -499,6 +451,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451060663934515}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -554,13 +511,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Left Middle (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &6843686945737217678 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 4369523049629477373}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4973535804397855769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -568,6 +526,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451060663934515}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -623,13 +586,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Left Middle (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &2837143941394783082 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 4973535804397855769}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5241918542905838587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -637,6 +601,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451060663934515}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -692,13 +661,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Left Middle (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &3090887923801879688 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 5241918542905838587}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5360279904304866306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -706,6 +676,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451060663934515}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Left Middle
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -761,13 +736,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Left Middle
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &2898498712448752497 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 5360279904304866306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6177793478737292876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -775,6 +751,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451060663934515}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -830,13 +811,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Right Middle (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &4026760558055428415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 6177793478737292876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6409054825452028948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -844,6 +826,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451058716942869}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -899,13 +886,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Right Middle (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &4227624943228861287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 6409054825452028948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8776264857937883859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -913,6 +901,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451058716942869}
     m_Modifications:
+    - target: {fileID: 1443142276095901945, guid: 48468f2f8eff26b40b9759d13dc964c0,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right
+      objectReference: {fileID: 0}
     - target: {fileID: 1988139564563569795, guid: 48468f2f8eff26b40b9759d13dc964c0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -968,13 +961,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1443142276095901945, guid: 48468f2f8eff26b40b9759d13dc964c0,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Right
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48468f2f8eff26b40b9759d13dc964c0, type: 3}
+--- !u!4 &7087755442509033040 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1988139564563569795, guid: 48468f2f8eff26b40b9759d13dc964c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8776264857937883859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8896543416268667728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -982,6 +976,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8985451060663934515}
     m_Modifications:
+    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
+        type: 3}
+      propertyPath: m_Name
+      value: Conveyor Right Middle (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1037,10 +1036,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6069790042250872891, guid: 3149db3cbd8eede4e8f29d44ede37704,
-        type: 3}
-      propertyPath: m_Name
-      value: Conveyor Right Middle (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3149db3cbd8eede4e8f29d44ede37704, type: 3}
+--- !u!4 &1814066700298372131 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7086980350499290995, guid: 3149db3cbd8eede4e8f29d44ede37704,
+    type: 3}
+  m_PrefabInstance: {fileID: 8896543416268667728}
+  m_PrefabAsset: {fileID: 0}

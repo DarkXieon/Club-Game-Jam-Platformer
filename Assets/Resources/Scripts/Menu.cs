@@ -76,10 +76,11 @@ public class Menu : MonoBehaviour
     {
         if(Selection != null)
         {
+            //Player.Stop();
             SceneManager.LoadScene(Selection.SceneName);
             gameObject.SetActive(false);
             //SceneManager.sceneLoaded += (scene, loadMode) => SceneManager.SetActiveScene(scene);//SceneManager.GetSceneByName(Selection.SceneName));
-            Player.Play();
+            //Player.Play();
         }
     }
 }

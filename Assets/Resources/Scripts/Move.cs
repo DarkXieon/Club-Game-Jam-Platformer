@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    private const string moveAxis = "Horizontal";
+
     public float RunSpeed;
     public float WalkSpeed;
     public KeyCode ToggleWalkButton = KeyCode.CapsLock;
@@ -26,7 +28,7 @@ public class Move : MonoBehaviour
             ? WalkSpeed
             : RunSpeed;
 
-        float movement = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        float movement = GetMovement() * speed * Time.deltaTime;
 
         RaycastHit2D[] hits = new RaycastHit2D[10];
         int count = body.Cast(Vector2.right, hits, movement);
@@ -54,5 +56,10 @@ public class Move : MonoBehaviour
         {
             tracker.StopRunning();
         }
+    }
+
+    private float GetMovement()
+    {
+        return Input.GetAxis(moveAxis);
     }
 }

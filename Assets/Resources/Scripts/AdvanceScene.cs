@@ -7,7 +7,7 @@ public class AdvanceScene : MonoBehaviour
 {
     public static AdvanceScene Singleton;
 
-    private static string[] names = new string[]{ "Level 01", "Level 1", "Level 02", "Level 03", "Level 4" };
+    private static string[] names = new string[]{ "Level 1", "Level 2", "Level 3", "Level 4", "Level 5" };
     private static int currentIndex;
 
     public void Awake()
@@ -17,21 +17,21 @@ public class AdvanceScene : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.N))
-        {
-            LoadNextScene();
+    //public void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.N))
+    //    {
+    //        LoadNextScene();
 
-            currentIndex = Mathf.Clamp(currentIndex + 1, 0, 4);
-        }
-        else if(Input.GetKeyDown(KeyCode.B))
-        {
-            currentIndex = Mathf.Clamp(currentIndex - 1, 0, 4);
+    //        currentIndex = Mathf.Clamp(currentIndex + 1, 0, 4);
+    //    }
+    //    else if (Input.GetKeyDown(KeyCode.B))
+    //    {
+    //        currentIndex = Mathf.Clamp(currentIndex - 1, 0, 4);
 
-            LoadNextScene();
-        }
-    }
+    //        LoadNextScene();
+    //    }
+    //}
 
     public void LoadNextScene()
     {

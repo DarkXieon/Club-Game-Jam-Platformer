@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Activator : MonoBehaviour
 {
-    public KeyCode ActivationKey = KeyCode.E;
+    private const string activateButton = "Activate";
+    //public KeyCode ActivationKey = KeyCode.E;
     
     private Die die;
     private List<Collider2D> insideOf;
@@ -22,11 +23,11 @@ public class Activator : MonoBehaviour
         Debug.Assert(collision.tag != "Player");
         Debug.Assert(die != null);
 
-        Activatable[] activations = collision.gameObject.GetComponents<Activatable>();
+        IEnumerable<Activatable> activations = collision.gameObject.GetComponents<Activatable>();
         
         foreach (Activatable toActivate in activations)
         {
-            if (Activatable.CanActivate(toActivate, die.IsDead, Input.GetKeyDown(ActivationKey)))
+            if (Activatable.CanActivate(toActivate, die.IsDead, IsPressingActivate()))
             {
                 Activatable.Activate(toActivate);
             }
@@ -42,8 +43,8 @@ public class Activator : MonoBehaviour
         Debug.Assert(collision.tag != "Player");
         Debug.Assert(die != null);
 
-        Activatable[] activations = collision.gameObject.GetComponents<Activatable>();
-        
+        IEnumerable<Activatable> activations = collision.gameObject.GetComponents<Activatable>();
+
         foreach (Activatable toActivate in activations)
         {
             if (toActivate.Activated && Activatable.CanDeactivate(toActivate))
@@ -58,11 +59,11 @@ public class Activator : MonoBehaviour
     
     private void TriggerStay(Collider2D collision)
     {
-        Activatable[] activations = collision.gameObject.GetComponents<Activatable>();
+        IEnumerable<Activatable> activations = collision.gameObject.GetComponents<Activatable>();
 
         foreach (Activatable toActivate in activations)
         {
-            if (Activatable.CanActivate(toActivate, die.IsDead, Input.GetKeyDown(ActivationKey)))// && !handledInputCase))
+            if (Activatable.CanActivate(toActivate, die.IsDead, IsPressingActivate()))
             {
                 Activatable.Activate(toActivate);
             }
@@ -75,5 +76,10 @@ public class Activator : MonoBehaviour
         {
             TriggerStay(collider);
         }
+    }
+
+    private bool IsPressingActivate()
+    {
+        return Input.GetButtonDown(activateButton);
     }
 }

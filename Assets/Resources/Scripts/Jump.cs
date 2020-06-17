@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
+    private const string jumpButton = "Jump";
+
     public LayerMask Mask;
     public Vector2 JumpHeightMinMax;
     public float Offset;
@@ -33,7 +35,7 @@ public class Jump : MonoBehaviour
 
         inAir = count == 0;
         
-        if (!inAir && Input.GetAxis("Vertical") > 0f)
+        if (!inAir && (IsJumpButtonPressed() || IsJumpButtonHeld()))
         {
             float jumpVelocity = Mathf.Sqrt(-2 * JumpHeightMinMax.x * Physics2D.gravity.y);
 
@@ -48,7 +50,7 @@ public class Jump : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (inAir && Input.GetAxis("Vertical") > 0f && body.velocity.y > 0 && enabled)
+        if (inAir && IsJumpButtonHeld() && body.velocity.y > 0 && enabled)
         {
             float minJumpVelocity = Mathf.Sqrt(-2 * JumpHeightMinMax.x * Physics2D.gravity.y);
             float minJumpTime = minJumpVelocity / -Physics2D.gravity.y;
@@ -75,5 +77,15 @@ public class Jump : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y + Offset * transform.localScale.y, 0), Radius * transform.localScale.y);
+    }
+
+    private bool IsJumpButtonPressed()
+    {
+        return Input.GetButtonDown(jumpButton);
+    }
+
+    private bool IsJumpButtonHeld()
+    {
+        return Input.GetButton(jumpButton);
     }
 }

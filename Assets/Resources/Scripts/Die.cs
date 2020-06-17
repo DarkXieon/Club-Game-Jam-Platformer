@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Die : MonoBehaviour
 {
-    public KeyCode DeathKey;
+    private const string dieButton = "Die";
+
+    //public KeyCode DeathKey;
     public bool IsDead => isDead;
 
     private GameObject prefab;
@@ -38,7 +40,7 @@ public class Die : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(DeathKey))
+        if(IsDieButtonPressed())
         {
             Kill();
         }
@@ -58,5 +60,10 @@ public class Die : MonoBehaviour
         jump.enabled = false;
         stick.enabled = false;
         enabled = false;
+    }
+
+    private bool IsDieButtonPressed()
+    {
+        return Input.GetButtonDown(dieButton);
     }
 }

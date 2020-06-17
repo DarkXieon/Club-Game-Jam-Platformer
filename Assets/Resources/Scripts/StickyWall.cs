@@ -166,9 +166,11 @@ public class StickyWall : MonoBehaviour
             player.PlayerBody.bodyType = RigidbodyType2D.Dynamic;
 
             player.PlayerBody.GetComponent<StickToWalls>().UnStick();
+            
+            player.PlayerBody.transform.localPosition = new Vector3(player.PlayerBody.transform.localPosition.x * 1.1f, player.PlayerBody.transform.localPosition.y);
 
             player.PlayerBody.transform.parent = null;
-
+            
             stuckPlayers.Remove(player);
         }
     }
