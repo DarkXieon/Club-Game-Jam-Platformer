@@ -1,37 +1,32 @@
-﻿using System.Linq;
+﻿using Assets.Resources.Scripts.Input;
+
+using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Move : MonoBehaviour
 {
-    private const string moveAxis = "Horizontal";
-
+    public string MovementAxis = "Horizontal";
     public float RunSpeed;
-    public float WalkSpeed;
-    public KeyCode ToggleWalkButton = KeyCode.CapsLock;
 
-    private bool walking;
-    private AnimationVelocityTracker tracker;
-    private Rigidbody2D body;
+    private AnimationVelocityTracker _tracker;
+    private Rigidbody2D _body;
     
     private void Start()
     {
-        tracker = GetComponent<AnimationVelocityTracker>();
-        body = GetComponent<Rigidbody2D>();
+        _tracker = GetComponent<AnimationVelocityTracker>();
+        _body = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(ToggleWalkButton))
-            walking = !walking;
+        int direction = 0;
+        if (Input.GetAxis(MovementAxis) < 0) direction = -1;
+        if (Input.GetAxis(MovementAxis) > 0) direction = 1;
 
-        float speed = walking
-            ? WalkSpeed
-            : RunSpeed;
-
-        float movement = GetMovement() * speed * Time.deltaTime;
-
+        float movement = direction * RunSpeed * Time.deltaTime;
         RaycastHit2D[] hits = new RaycastHit2D[10];
-        int count = body.Cast(Vector2.right, hits, movement);
+        int count = _body.Cast(Vector2.right, hits, movement);
 
         hits = hits
             .Where(hit => hit.collider != null && !hit.collider.isTrigger)
@@ -50,16 +45,11 @@ public class Move : MonoBehaviour
             }
 
             transform.Translate(Vector2.right * Mathf.Abs(movement));
-            tracker.StartRunning(movement);
+            _tracker.StartRunning(movement);
         }
         else
         {
-            tracker.StopRunning();
+            _tracker.StopRunning();
         }
-    }
-
-    private float GetMovement()
-    {
-        return Input.GetAxis(moveAxis);
     }
 }
